@@ -1,16 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { Container } from "rbx";
+import { Block} from "rbx";
 import "rbx/index.css";
 
-import Heading from './Heading'
+import Heading from './Heading/Heading'
+import Body from './Body/Body'
+
+import styled, { keyframes } from 'styled-components';
+import { fadeInDown } from 'react-animations';
+
+const fadeInDownAnimation = keyframes`${fadeInDown}`;
+const FadeIn = styled.div`
+  animation: 1s ${fadeInDownAnimation};
+`;
+
 
 function App() {
   return (
-    <div>
-      <Heading/>
-    </div>
+    <center>
+      <FadeIn>
+        <Heading/>
+        <Block/>
+        <Body/>
+      </FadeIn>
+
+    </center>
   );
 }
 

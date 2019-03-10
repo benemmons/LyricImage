@@ -16,7 +16,7 @@ export default class Heading extends React.Component {
 
   render() {
     switch(this.state.stage) {
-      case 0:
+      default:
         return (
           <Button size="large" color="primary" onClick={() => this.onStartClick(this.state.stage)}>Start</Button>
         )

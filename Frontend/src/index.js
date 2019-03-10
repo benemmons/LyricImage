@@ -4,15 +4,13 @@ import ReactDOM from "react-dom";
 import { Container } from "rbx";
 import "rbx/index.css";
 
-import HelloWorldButton from './HelloWorldButton'
-import HelloWorldNotification from './HelloWorldNotification'
+import Heading from './Heading'
 
 function App() {
   return (
-    <Container>
-      <HelloWorldNotification />      
-      <HelloWorldButton />
-    </Container>
+    <div>
+      <Heading/>
+    </div>
   );
 }
 
